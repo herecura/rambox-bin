@@ -1,6 +1,6 @@
 
 pkgname=rambox-bin
-pkgver=0.7.0
+pkgver=0.7.1
 pkgrel=1
 pkgdesc='messaging and emailing app that combines common web applications into one.'
 arch=('x86_64')
@@ -10,7 +10,7 @@ url='http://rambox.pro/'
 license=('GPL3')
 source=("https://github.com/ramboxapp/community-edition/releases/download/$pkgver/Rambox-$pkgver-linux-x86_64.rpm"
 )
-sha512sums=('2eda0e276c0ea3fcdf200696c3f23db4942ad2b7d0322b0593d118d3a2a4b472b6d68733fa7372409fcb1554e3e6b6647cd244b6e4cd5be92a6d6ab32cf08113')
+sha512sums=('1c4311e71d1c8b205738ceafb13989f3b7e9addd6f918f03a5d261905f33e0b26b8eaa6682a1987dbc629eadb1e0a52cffcefafd82c79b5b4b7ceed451bf2924')
 
 package() {
     cp -a "$srcdir"/{opt,usr} "$pkgdir"
